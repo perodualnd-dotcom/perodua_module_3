@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perodua EV Training Module 1</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Inter',sans-serif;}
+body { background:#f5f7fa; color:#1f2937; line-height:1.7; font-size:14px; }
+
+.navbar { display:flex; justify-content:space-between; align-items:center; padding:12px 20px; background:white; border-bottom:1px solid #e5e7eb; position: sticky; top:0; z-index:999; }
+.navbar .brand { font-weight:700; color:#d71920; font-size:16px; letter-spacing:1px; }
+.language-switch{ display:flex; }
+.language-switch button{ padding:6px 14px; margin-left:8px; border:none; border-radius:20px; cursor:pointer; font-weight:600; color:#d71920; background:#fff; box-shadow:0 3px 10px rgba(0,0,0,0.05); transition:0.3s; }
+.language-switch button.active{ background:#d71920; color:white; box-shadow:0 4px 12px rgba(215,25,32,0.3); }
+
+.hero{ position:relative; background:url("Screenshot 2026-02-23 at 4.22.39 PM copy 4.png") center/cover no-repeat; height:350px; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; color:white; }
+.hero::after{ content:""; position:absolute; top:0; left:0; width:100%; height:100%; background:linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6)); }
+.hero-content{ position:relative; z-index:2; padding:0 20px; }
+.hero h1{ font-size:26px; font-weight:700; margin-bottom:10px; line-height:1.2; }
+.hero p{ font-size:16px; margin-bottom:15px; }
+.hero .btn-primary{ background:#d71920; color:white; padding:12px 20px; border-radius:25px; text-decoration:none; font-weight:700; transition:0.3s; }
+.hero .btn-primary:hover{ background:#b2161b; }
+
+.module-section{ padding:20px; }
+.module-card{ display:flex; flex-direction:column; margin-bottom:25px; background:white; border-radius:15px; box-shadow:0 10px 30px rgba(0,0,0,0.06); overflow:hidden; transition:0.3s; }
+.module-card:hover{ transform:translateY(-4px);}
+.module-card img{ width:100%; height:auto; display:block; border-radius:15px; }
+.module-content{ padding:15px 15px; }
+.module-content h2{ color:#d71920; font-size:18px; font-weight:700; margin-bottom:8px; }
+.module-content p{ font-size:15px; text-align:justify; color:#1f2937; line-height:1.8; margin-bottom:12px; }
+.module-content p b{ color:#d71920; }
+
+.summary-section{ padding:20px; }
+.summary-container{ display:flex; flex-direction:column; gap:20px; }
+.summary-text, .summary-poster{ flex:1; }
+.summary-poster img{ width:100%; border-radius:15px; }
+
+footer{ background:white; padding:20px; text-align:center; font-size:13px; color:#4b5563; border-top:1px solid #e5e7eb; }
+
+@media(min-width:768px){
+    .hero h1{ font-size:34px; }
+    .hero p{ font-size:18px; }
+    .module-card{ flex-direction:row; }
+    .module-card:nth-child(even){ flex-direction:row-reverse; }
+    .module-card img{ width:50%; }
+    .module-content{ width:50%; padding:20px; }
+
+    .summary-container{ flex-direction:row; justify-content:space-between; align-items:center; }
+    .summary-text{ padding-right:20px; text-align:left; }
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="brand">PERODUA EV MODULE</div>
+    <div class="language-switch">
+        <button class="active" onclick="showEnglish()">EN</button>
+        <button onclick="showMalay()">BM</button>
+    </div>
+</div>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Module 3:Identifying Electrified Vehicles with Accuracy </h1>
+        <a href="#modules" class="btn-primary">Start Learning</a>
+    </div>
+</section>
+
+<section class="module-section" id="modules">
+
+<!-- =================== ENGLISH =================== -->
+<div id="english">
+
+<!-- Card 1 -->
+
+<div class="module-card">
+    <div class="module-content">
+        
+       <p>When discussing electric vehicles with customers, clarity matters far more than complexity. Module 3 focuses on the essential components that power an EV—not from an engineering standpoint, but from a practical, customerfriendly perspective. As a Sales Advisor, your role is not to explain circuitry, voltage maps, or deep technical design. Your responsibility is to understand the key components well enough to present them with confidence, accuracy, and structure. When a customer asks, “What actually powers this vehicle?”, hesitation signals uncertainty. A clear and organised explanation, however, builds authority. </p> 
+
+<p> Electric vehicles differ fundamentally from internal combustion engine (ICE) vehicles because they rely on an entirely different source of energy. An ICE vehicle generates power by burning fuel inside its engine. That combustion process requires a fuel tank, an engine block, a transmission system, spark plugs, exhaust piping, and several mechanical components designed to manage fuel and emissions. An electric vehicle operates on a completely different principle. Instead of burning fuel, it uses electricity stored inside a highvoltage battery to power an electric motor. Because the energy source is different, the architecture of the vehicle is different as well. A different power source leads to different components, different maintenance expectations, and ultimately, a different driving experience. </p> 
+
+<p> To understand EV systems clearly, there are six core components every Sales Advisor must know. These six elements form the foundational structure present across all EVs regardless of brand or model. They include the OnBoard Charger (OBC), the HighVoltage Battery, the Inverter (also called the Power Control Unit), the Electric Motor, the Reducer, and the DCDC Converter. Once you understand how these components interact, the entire EV ecosystem becomes logical rather than technical. </p>  
+		
+    </div>
+</div>
+
+<!-- Card 2 -->
+<div class="module-card">
+    <img src=  "Screenshot 2026-03-01 at 11.18.09 PM.png" alt="3grid">
+    <div class="module-content">
+         <p> The OnBoard Charger is the first key component, primarily involved during AC charging. When a customer plugs the vehicle into a home wall box or an AC public charger, the electricity supplied is in Alternating Current form. The battery, however, stores energy as Direct Current. The OBC’s role is to convert AC into DC so the battery can store it. It is crucial to understand that the OBC is not used during DC fast charging, because DC chargers perform the conversion outside the vehicle. This distinction matters. If you confuse the role of the OBC, customers who are familiar with charging will immediately notice the inconsistency. </p> 
+
+<p> The highvoltage battery serves as the central energy storage unit of the vehicle. It functions like a fuel tank in a petrol car, except it stores electricity rather than petrol. This battery supplies energy to the electric motor and other highvoltage systems. Battery capacity directly influences driving range, performance, and efficiency. When customers ask questions about range, they are indirectly asking about battery size, energy density, and how efficiently the vehicle manages that stored energy. Understanding this relationship allows you to provide accurate, structured explanations. </p> 
+
+<p> The inverter is another critical component and acts as the control bridge between the battery and the motor. During driving, the battery supplies DC electricity. However, the electric motor operates using AC power. The inverter converts DC into AC, making it possible for the motor to function. During regenerative braking, the energy flow reverses. The motor generates AC electricity as it slows the vehicle down, and the inverter converts that AC power back into DC for the battery to store. In simple terms, the inverter manages the direction and conversion of energy, functioning as one of the most important “traffic controllers” in the EV system. </p> 
+
+    </div>
+</div>
+
+<!-- Card 3 -->
+<div class="module-card">
+    <img src=   "eng only.PNG" alt="EV Illustration 4">
+    <div class="module-content">
+        <h2> . </h2>
+       <p> The electric motor is the heart of the propulsion system. It converts electrical energy into mechanical energy, creating the torque needed to move the vehicle. Unlike an ICE engine, which requires combustion cycles and multiple gears to produce usable power, an electric motor delivers immediate torque from the moment it begins turning. This explains the smooth, instant acceleration EV drivers experience. The same motor also performs regenerative braking when operating in reverse as a generator, converting mechanical energy back into electricity to recharge the battery. One component serving two critical roles reflects the efficiency of EV design. </p> 
+
+ 
+
+<p> The reducer functions similarly to a gearbox but in a far simpler form. Electric motors can spin extremely quickly, often thousands of revolutions per minute. The reducer lowers this high rotational speed and converts it into usable torque before sending it to the wheels. Because EVs do not require complex multigear transmissions, the overall drivetrain becomes simpler, lighter, and more seamless in operation. When customers ask why EVs feel exceptionally smooth, the reducer is part of that answer. </p> 
+
+<p> The final core component is the DCDC Converter. In an ICE vehicle, the alternator converts mechanical energy into electrical energy to power lowvoltage systems like lighting and infotainment. In an EV, this function is handled by the DCDC converter. It steps down highvoltage power from the main battery into lowvoltage energy—usually 12 volts—to operate standard electronics and recharge the auxiliary battery. Customers rarely ask about this directly, but understanding its role allows you to explain the entire EV system with structure and confidence. </p> 
+
+<p> At first glance, EV technology may appear complex. But when broken down into six key components, each with a clear and defined function, the system becomes straightforward. Energy is stored, converted, controlled, and delivered in a continuous and efficient loop. Once you understand this logic, you do not need to memorise scripted descriptions. You can explain confidently and adapt your explanation based on the customer’s level of understanding. </p> 
+
+<p> The question is not simply whether you can name the components. The real test is whether you can explain how they work together—clearly, confidently, and without hesitation. When you can do that, you position yourself not just as a salesperson, but as a trusted advisor within a rapidly evolving automotive market. </p> 
+		
+    </div>
+</div>
+
+
+
+
+<!-- SUMMARY SECTION -->
+<section class="summary-section">
+    <div class="summary-container">
+            
+        <div class="summary-poster">
+            <img src= "Gemini_Generated_Image_te6kopte6kopte6k.png" alt="EV Poster">
+        </div>
+    </div>
+</section>
+
+</div> <!-- End English -->
+
+<!-- =================== BM =================== -->
+<div id="malay">
+<!-- Card 1 -->
+
+<div class="module-card">
+    <div class="module-content">
+        
+       <p>Apabila berbincang tentang kenderaan elektrik dengan pelanggan, kejelasan jauh lebih penting daripada penerangan yang terlalu kompleks. Modul 3 memberi fokus kepada komponen utama yang menggerakkan EV — bukan dari sudut kejuruteraan yang terlalu teknikal, tetapi dari perspektif yang praktikal dan mudah difahami pelanggan. Sebagai Sales Advisor, peranan anda bukan untuk menerangkan litar elektronik, peta voltan atau reka bentuk teknikal yang mendalam. Tanggungjawab anda ialah memahami komponen utama dengan cukup baik supaya boleh menerangkannya dengan yakin, tepat dan tersusun. Apabila pelanggan bertanya, “Apa sebenarnya yang menggerakkan kenderaan ini?”, keraguan dalam jawapan akan menunjukkan ketidakpastian. Sebaliknya, penerangan yang jelas dan teratur akan membina keyakinan dan kredibiliti.</p> 
+
+<p>Kenderaan elektrik berbeza secara asas daripada kenderaan enjin pembakaran dalaman (ICE) kerana ia menggunakan sumber tenaga yang berbeza sepenuhnya. Kenderaan ICE menghasilkan kuasa dengan membakar bahan api di dalam enjin. Proses pembakaran ini memerlukan tangki bahan api, blok enjin, sistem transmisi, palam pencucuh, paip ekzos dan pelbagai komponen mekanikal lain yang mengurus bahan api serta pelepasan gas. Kenderaan elektrik pula beroperasi dengan prinsip yang berbeza. Daripada membakar bahan api, ia menggunakan elektrik yang disimpan dalam bateri voltan tinggi untuk menggerakkan motor elektrik. Oleh sebab sumber tenaganya berbeza, struktur kenderaannya juga berbeza. Sumber tenaga yang berbeza membawa kepada komponen yang berbeza, jangkaan penyelenggaraan yang berbeza, dan akhirnya pengalaman pemanduan yang juga berbeza.</p> 
+
+<p>Untuk memahami sistem EV dengan jelas, terdapat enam komponen utama yang perlu diketahui oleh setiap Sales Advisor. Enam komponen ini membentuk asas sistem yang terdapat pada semua EV tanpa mengira jenama atau model. Komponen tersebut ialah On-Board Charger (OBC), bateri voltan tinggi, inverter (juga dikenali sebagai Power Control Unit), motor elektrik, reducer, dan DCDC converter. Apabila anda memahami bagaimana komponen ini berinteraksi antara satu sama lain, keseluruhan sistem EV akan menjadi lebih logik dan mudah difahami.</p>  
+		
+    </div>
+</div>
+
+<!-- Card 2 -->
+<div class="module-card">
+    <img src= "Screenshot 2026-03-01 at 11.18.09 PM.png" alt="3grid">
+    <div class="module-content">
+
+<p>On-Board Charger ialah komponen penting pertama dan ia terlibat terutamanya semasa proses pengecasan AC. Apabila pelanggan mengecas kenderaan menggunakan wall box di rumah atau pengecas awam AC, elektrik yang dibekalkan adalah dalam bentuk Alternating Current (AC). Namun bateri kenderaan menyimpan tenaga dalam bentuk Direct Current (DC). Peranan OBC ialah menukar arus AC kepada DC supaya bateri boleh menyimpan tenaga tersebut. Penting untuk difahami bahawa OBC tidak digunakan semasa pengecasan pantas DC kerana pengecas DC melakukan proses penukaran itu di luar kenderaan. Perbezaan ini penting. Jika peranan OBC diterangkan dengan salah, pelanggan yang biasa dengan sistem pengecasan akan mudah menyedari ketidaktepatan tersebut.</p> 
+
+<p>Bateri voltan tinggi berfungsi sebagai unit penyimpanan tenaga utama dalam kenderaan. Ia boleh dianggap seperti tangki bahan api dalam kereta petrol, tetapi ia menyimpan elektrik dan bukannya petrol. Bateri ini membekalkan tenaga kepada motor elektrik dan sistem voltan tinggi yang lain. Kapasiti bateri memberi kesan secara langsung kepada jarak pemanduan, prestasi dan kecekapan kenderaan. Apabila pelanggan bertanya tentang jarak pemanduan, secara tidak langsung mereka sebenarnya bertanya tentang saiz bateri, ketumpatan tenaga, dan sejauh mana kenderaan menggunakan tenaga yang disimpan dengan cekap. Memahami hubungan ini membantu anda memberi penerangan yang lebih jelas dan tersusun.</p> 
+
+<p>Inverter ialah satu lagi komponen penting yang bertindak sebagai penghubung kawalan antara bateri dan motor. Semasa memandu, bateri membekalkan elektrik dalam bentuk DC. Namun motor elektrik beroperasi menggunakan arus AC. Inverter menukar tenaga DC kepada AC supaya motor boleh berfungsi. Semasa brek regeneratif pula, aliran tenaga akan berbalik arah. Motor akan menghasilkan tenaga elektrik dalam bentuk AC ketika memperlahankan kenderaan, dan inverter akan menukarkannya semula kepada DC untuk disimpan dalam bateri. Secara ringkasnya, inverter mengurus arah aliran dan penukaran tenaga, menjadikannya salah satu “pengawal trafik tenaga” yang paling penting dalam sistem EV.</p> 
+
+    </div>
+</div>
+
+<!-- Card 3 -->
+<div class="module-card">
+    <img src="eng only.PNG" alt="EV Illustration 4">
+    <div class="module-content">
+        <h2>  </h2>
+
+<p>Motor elektrik merupakan komponen utama dalam sistem pergerakan kenderaan. Ia menukarkan tenaga elektrik kepada tenaga mekanikal untuk menghasilkan tork yang menggerakkan kenderaan. Berbeza dengan enjin ICE yang memerlukan kitaran pembakaran dan beberapa gear untuk menghasilkan kuasa yang boleh digunakan, motor elektrik memberikan tork serta-merta sebaik sahaja ia mula berputar. Inilah sebabnya pemanduan EV terasa lebih lancar dan pecutannya lebih responsif. Motor yang sama juga menjalankan fungsi brek regeneratif apabila bertindak sebagai generator, menukarkan tenaga mekanikal kembali kepada elektrik untuk mengecas semula bateri. Satu komponen yang menjalankan dua fungsi penting menunjukkan kecekapan reka bentuk EV.</p> 
+
+<p>Reducer berfungsi hampir seperti gearbox, tetapi dalam bentuk yang jauh lebih ringkas. Motor elektrik boleh berputar dengan sangat laju, selalunya mencecah ribuan pusingan seminit. Reducer menurunkan kelajuan putaran yang tinggi ini dan menukarkannya kepada tork yang sesuai sebelum dihantar ke roda. Oleh kerana EV tidak memerlukan transmisi berbilang gear yang kompleks, keseluruhan sistem pemanduan menjadi lebih ringkas, lebih ringan dan lebih lancar ketika digunakan. Apabila pelanggan bertanya mengapa pemanduan EV terasa sangat smooth, reducer adalah sebahagian daripada jawapannya.</p> 
+
+<p>Komponen utama terakhir ialah DCDC Converter. Dalam kenderaan ICE, alternator menukarkan tenaga mekanikal kepada tenaga elektrik untuk membekalkan kuasa kepada sistem voltan rendah seperti lampu dan infotainment. Dalam EV, fungsi ini dilakukan oleh DCDC converter. Ia menurunkan voltan tinggi daripada bateri utama kepada voltan rendah — biasanya sekitar 12 volt — untuk menggerakkan sistem elektronik biasa serta mengecas bateri tambahan. Walaupun pelanggan jarang bertanya tentang komponen ini secara langsung, memahaminya membantu anda menerangkan keseluruhan sistem EV dengan lebih jelas dan yakin.</p> 
+
+<p>Pada pandangan pertama, teknologi EV mungkin kelihatan kompleks. Tetapi apabila ia dipecahkan kepada enam komponen utama yang masing-masing mempunyai fungsi yang jelas, keseluruhan sistem menjadi lebih mudah difahami. Tenaga disimpan, ditukar, dikawal dan dihantar dalam satu kitaran yang berterusan dan cekap. Apabila anda memahami logik ini, anda tidak perlu menghafal skrip penerangan. Anda boleh menerangkannya dengan yakin dan menyesuaikan penerangan mengikut tahap pemahaman pelanggan.</p> 
+
+<p>Persoalannya bukan sekadar sama ada anda boleh menyenaraikan komponen tersebut. Ujian sebenar ialah sama ada anda boleh menerangkan bagaimana semuanya bekerjasama — dengan jelas, yakin dan tanpa ragu-ragu. Apabila anda mampu melakukannya, anda bukan sekadar bertindak sebagai jurujual, tetapi sebagai penasihat yang dipercayai dalam pasaran automotif yang sedang berkembang pesat ke arah elektrifikasi.</p>
+		
+    </div>
+</div>
+
+
+
+
+<!-- SUMMARY SECTION -->
+<section class="summary-section">
+    <div class="summary-container">
+        <div class="summary-text">
+            
+        <div class="summary-poster">
+            <img src= "Gemini_Generated_Image_te6kopte6kopte6k.png" alt="EV Poster">
+        </div>
+    </div>
+</section>
+
+
+<footer>
+© 2026 Perodua EV Training Module
+</footer>
+
+<script>
+const eng = document.getElementById("english");
+const mal = document.getElementById("malay");
+const buttons = document.querySelectorAll(".language-switch button");
+
+function showEnglish(){
+    eng.style.display="block";
+    mal.style.display="none";
+    buttons[0].classList.add("active");
+    buttons[1].classList.remove("active");
+}
+
+function showMalay(){
+    eng.style.display="none";
+    mal.style.display="block";
+    buttons[1].classList.add("active");
+    buttons[0].classList.remove("active");
+}
+
+// Default show English
+showEnglish();
+</script>
+
+</html>
